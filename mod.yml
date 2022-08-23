@@ -1,0 +1,29 @@
+title: Antiform Improvements
+description: Changes many things about Antiform so it's less of a punishment and more of a proper form. Includes costing 4 drive, damage multiplier removed, No Experience ability removed, Reaction Commands usable, and persistence across rooms. Does NOT include healing or a camp menu... yet. Revert in battle by pressing R2 + L2 at the same time.
+originalAuthor: Kayya + Zurph
+assets:
+- name: 03system.bin
+  method: binarc
+  source:
+  - name: pref
+    type: binary
+    method: copy
+    source:
+      - name: PREF.bar
+  - name: cmd
+    type: list
+    method: copy
+    source:
+      - name: cmd_0.list
+- name: 00battle.bin
+  method: binarc
+  source:
+  - name: plrp
+    type: list
+    method: copy
+    source:
+      - name: plrp_0.list
+- name: scripts/AntiformImprovements.lua
+  method: copy
+  source:
+  - name: AntiformImprovements.lua
