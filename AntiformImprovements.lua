@@ -33,9 +33,9 @@ CurrFormCheck = ReadByte(CurrForm)
 	if CurrFormCheck == 0x06 and ReadByte(ForceAnti2) == 0x00 then 
 		WriteArray(RCDisable, {0x90, 0x90, 0x90, 0x90})
 		WriteByte(ForceAnti2, 0x06)
-	elseif CurrFormCheck ~= 6 then
-		WriteByte(ForceAnti2, 0x00)	
-		WriteArray(RCDisable, {0xC6, 0x43, 0x35, 0x05})
+	--elseif CurrFormCheck ~= 6 then
+		--WriteByte(ForceAnti2, 0x00)	
+		--WriteArray(RCDisable, {0xC6, 0x43, 0x35, 0x05})
 end
 end
 
