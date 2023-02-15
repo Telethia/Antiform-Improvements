@@ -21,9 +21,9 @@ Slot1 = 0x24BC74A --Offset 0x56454E subtracted.
 Input = 0x1ACF3C --Offset 0x56454E subtracted.
 StartingItems = 0x2541446 --Offset 0x56454E subtracted. This is starting item #40, for Sora. Prevents from overlapping with starting items.
 CurrFormCheck = ReadByte(CurrForm)
-	if ReadByte(StartingItems) ~= 0x1E then
-		WriteByte(StartingItems, 0x1E)
-	end
+	-- if ReadByte(StartingItems) ~= 0x1E then
+	--	WriteByte(StartingItems, 0x1E)
+	-- end
 	if AntiCost ~= 4 then 		--DEBUG: Set antiforms cost to 0
 		WriteByte(AntiCost, 4)
 	end
